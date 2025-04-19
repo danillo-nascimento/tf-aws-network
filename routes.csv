@@ -1,0 +1,7 @@
+vpc_name,route_table_type,destination_cidr,target_type,target_value
+vpc-network-services-us-east-2a,private,192.168.205.0/24,tgw,auto
+vpc-security-services-us-east-2a,private,192.168.205.0/24,tgw,auto
+vpc-infrastructure-services-us-east-2a,private,192.168.205.0/24,tgw,auto
+vpc-network-services-us-east-2a,public,8.8.8.8/32,igw,auto
+vpc-security-services-us-east-2a,public,8.8.8.8/32,igw,auto
+vpc-infrastructure-services-us-east-2a,public,8.8.8.8/32,igw,auto
