@@ -6,7 +6,7 @@ Este projeto provisiona automaticamente VPCs, subnets públicas e privadas, Inte
 
 ## 📁 Estrutura do Projeto
 
-```
+```text
 tf-aws-project/
 ├── main.tf
 ├── provider.tf
@@ -45,6 +45,7 @@ aws configure
 ### 3. Configurar os arquivos CSV
 
 #### `redes.csv`
+
 Contém as definições de VPCs, subnets e ativação de VGW/TGW:
 
 ```csv
@@ -55,6 +56,7 @@ vpc-infrastructure-services-us-east-2a,10.10.8.0/22,10.10.8.0/23,10.10.10.0/23,u
 ```
 
 #### `peerings.csv`
+
 Define os pares de VPCs que devem ser interconectados via peering:
 
 ```csv
@@ -65,6 +67,7 @@ vpc-security-services-us-east-2a,vpc-infrastructure-services-us-east-2a
 ```
 
 #### `routes.csv`
+
 Define rotas customizadas nas VPCs:
 
 ```csv
